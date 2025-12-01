@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1300">
+    <title>楽天ビューティ 検索フォーム</title>
+
+    <!-- 元のCSSファイルを読み込み -->
+    <link rel="stylesheet" href="/cnt/topics/campaign/10thAnniv/css/main.css?v202450206">
+
+    <style>
+        /* 最小限の調整用CSS */
+        body {
+            padding: 20px;
+            font-family: 'Noto Sans Japanese', Arial, sans-serif;
+        }
+        .shoplist__search {
+            max-width: 1216px;
+            margin: 0 auto;
+        }
+        .shoplist__search--info {
+            text-align: center;
+            font-size: 1.4rem;
+            margin-bottom: 16px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="shoplist__search">
+    <p class="shoplist__search--info">ヘア・ネイル・まつげ・エステ・リラクサロン対象!</p>
+    <div id="shopSearch" default-genre-id="" default-prefectures-id="13" search-style="" search-type="">
+        <div class="feature-search__form">
+            <form class="feature-search__menu">
+                <div class="feature-search__item is-genre">
+                    <select class="genreForm rb-select__default">
+                        <option value="">ヘアサロン</option>
+                        <option value="nail/">まつげ・ネイルサロン</option>
+                        <option value="esthe/">エステサロン</option>
+                        <option value="relax/">リラクサロン</option>
+                    </select>
+                </div>
+                <div class="feature-search__item">
+                    <select class="prefecturesForm feature-search__select">
+                        <option value="1">北海道</option>
+                        <option value="2">青森</option>
+                        <option value="3">岩手</option>
+                        <option value="4">宮城</option>
+                        <option value="5">秋田</option>
+                        <option value="6">山形</option>
+                        <option value="7">福島</option>
+                        <option value="8">茨城</option>
+                        <option value="9">栃木</option>
+                        <option value="10">群馬</option>
+                        <option value="11">埼玉</option>
+                        <option value="12">千葉</option>
+                        <option value="13">東京</option>
+                        <option value="14">神奈川</option>
+                        <option value="15">新潟</option>
+                        <option value="16">富山</option>
+                        <option value="17">石川</option>
+                        <option value="18">福井</option>
+                        <option value="19">山梨</option>
+                        <option value="20">長野</option>
+                        <option value="21">岐阜</option>
+                        <option value="22">静岡</option>
+                        <option value="23">愛知</option>
+                        <option value="24">三重</option>
+                        <option value="25">滋賀</option>
+                        <option value="26">京都</option>
+                        <option value="27">大阪</option>
+                        <option value="28">兵庫</option>
+                        <option value="29">奈良</option>
+                        <option value="30">和歌山</option>
+                        <option value="31">鳥取</option>
+                        <option value="32">島根</option>
+                        <option value="33">岡山</option>
+                        <option value="34">広島</option>
+                        <option value="35">山口</option>
+                        <option value="36">徳島</option>
+                        <option value="37">香川</option>
+                        <option value="38">愛媛</option>
+                        <option value="39">高知</option>
+                        <option value="40">福岡</option>
+                        <option value="41">佐賀</option>
+                        <option value="42">長崎</option>
+                        <option value="43">熊本</option>
+                        <option value="44">大分</option>
+                        <option value="45">宮崎</option>
+                        <option value="46">鹿児島</option>
+                        <option value="47">沖縄</option>
+                    </select>
+                </div>
+                <div class="feature-search__item is-areas">
+                    <select class="areaForm rb-select__default">
+                        <option label="大通" value="0111/" data-val="1">大通</option>
+                        <option label="札幌駅周辺" value="0101/" data-val="1">札幌駅周辺</option>
+                        <option label="円山周辺" value="0113/" data-val="1">円山周辺</option>
+                        <option label="すすきの・市電沿線" value="0112/" data-val="1">すすきの・市電沿線</option>
+                        <option label="北区・東区" value="0114/" data-val="1">北区・東区</option>
+                        <option label="豊平区・南区" value="0115/" data-val="1">豊平区・南区</option>
+                        <option label="西区・手稲区" value="0116/" data-val="1">西区・手稲区</option>
+                        <option label="白石区・厚別区・清田区" value="0117/" data-val="1">白石区・厚別区・清田区</option>
+                        <option label="函館" value="0103/" data-val="1">函館</option>
+                        <option label="千歳・恵庭・江別" value="0105/" data-val="1">千歳・恵庭・江別</option>
+                        <option label="小樽" value="0118/" data-val="1">小樽</option>
+                        <option label="室蘭・登別・苫小牧" value="0106/" data-val="1">室蘭・登別・苫小牧</option>
+                        <option label="旭川・滝川" value="0102/" data-val="1">旭川・滝川</option>
+                        <option label="網走・北見" value="0108/" data-val="1">網走・北見</option>
+                        <option label="釧路・根室" value="0110/" data-val="1">釧路・根室</option>
+                        <option label="帯広・十勝" value="0109/" data-val="1">帯広・十勝</option>
+                        <option label="北海道その他" value="0199/" data-val="1">北海道その他</option>
+                        <!-- 残りの都道府県のエリアオプションは元のHTMLと同じ -->
+                    </select>
+                </div>
+            </form>
+            <div class="formButton feature-search__buttonItem"><a class="feature-search__button">検索</a></div>
+        </div>
+    </div>
+</div>
+
+<!-- jQuery（shopSearch.jsが依存） -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+
+<!-- Vue.js（エリア検索に必要） -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.7.16" defer></script>
+
+<!-- Axios（API通信に必要） -->
+<script src="https://cdn.jsdelivr.net/npm/axios@1.6.0/dist/axios.min.js" defer></script>
+
+<!-- 楽天ビューティ共通JS（エリアデータ読み込みに必要） -->
+<script src="/cnt/common/js/readjson.js?v202450206" defer></script>
+
+<!-- エリア検索用JS（検索機能の本体） -->
+<script src="/cnt/common/js/area-search/shopSearch.js" defer></script>
+
+</body>
+</html>
